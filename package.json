@@ -8,13 +8,12 @@
     "url": "https://github.com/mrcsnm/mrcsnm.github.io.git"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": ">=20.x"
   },
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
-    "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "npx jest"
   },
@@ -25,6 +24,7 @@
     "@fortawesome/react-fontawesome": "0.2.2",
     "dayjs": "^1.11.13",
     "markdown-to-jsx": "^7.7.1",
+    "object.hasown": "^1.1.4",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-burger-menu": "^3.0.9",
@@ -37,6 +37,8 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.27.1",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.26.3",
     "@testing-library/jest-dom": "^5.17.0",
