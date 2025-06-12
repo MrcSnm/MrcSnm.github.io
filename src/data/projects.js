@@ -12,6 +12,17 @@ const data = [
       + 'Uses technology such as OpenGL, DirectX and Metal. Has an easy build system. [DConf 23\'](https://www.youtube.com/watch?v=jgygD7B_CPk) ',
   },
   {
+    title: '3D Garden in ThreeJS',
+    subtitle: '3D Garden written in ThreeJS in under 7 days',
+    link: 'https://github.com/MrcSnm/3D-Garden',
+    image: '/images/projects/3d_farm.png',
+    date: '2025-06-12',
+    desc:
+      'This project was done in under 7 days, featuring a full tutorial, UI and Game-like functionality. '
+      + 'An experience in ThreeJS, which of course lacks a little bit of polishing but I\'m proud to show how much '
+      + 'I can do in a single week.',
+  },
+  {
     title: 'Redub',
     subtitle: 'A build tool and package manager written in D with parallel programming',
     link: 'https://github.com/MrcSnm/redub',
