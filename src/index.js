@@ -1,11 +1,6 @@
-import * as hasOwn from 'object.hasown';
 import React from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
-
-if (!Object.hasOwn) {
-  hasOwn.shim();
-}
 
 // See https://reactjs.org/docs/strict-mode.html
 const StrictApp = () => (
